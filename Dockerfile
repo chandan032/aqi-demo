@@ -17,7 +17,7 @@ RUN apt install gettext -y
 RUN apt install ca-certificates -y
 
 # Add current directory code to working directory
-ADD ./app .
+ADD . /usr/src/app
 COPY requirements.txt .
 
 # install environment dependencies
