@@ -18,7 +18,7 @@ RUN apt install ca-certificates -y
 
 # Add current directory code to working directory
 ADD . /usr/src/app
-COPY requirements.txt .
+#COPY requirements.txt .
 
 # install environment dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
