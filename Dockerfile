@@ -23,8 +23,8 @@ ADD . /usr/src/app
 # install environment dependencies
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-COPY /scripts /usr/src/scripts/
+#COPY /scripts /usr/src/scripts/
 
-RUN chmod +x /usr/src/scripts/*
+RUN chmod +x entrypoint.dev.sh
 
 CMD ["entrypoint.dev.sh"]
