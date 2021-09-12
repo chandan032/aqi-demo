@@ -4,7 +4,7 @@ build:
 
 release:
   command:
-    ./celeryconfig.sh
+      - ./celeryconfig.sh
   image: web
 run:
   web: 
