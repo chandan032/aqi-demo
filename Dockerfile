@@ -25,6 +25,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 #COPY /scripts /usr/src/scripts/
 
-RUN chmod +x entrypoint.dev.sh
+RUN chmod +x entrypoint.dev.sh && chmod +x celeryconfig.sh
 
 CMD ["entrypoint.dev.sh"]
